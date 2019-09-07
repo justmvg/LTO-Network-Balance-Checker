@@ -1,0 +1,27 @@
+
+main{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.blocks {
+    margin: 2px !important;
+    padding: 1rem!important;
+}
+.page { margin: auto !important; width: 500px !important; }
+.text-white-50, a { color: rgba(255, 255, 255, .5) !important; }
+.text-center { text-align: center; }
+.bg-purple { background-color: var(--purple); }
+
+.doSubmit { margin: 5px auto}
+
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.lh-100 { line-height: 1; }
+.lh-125 { line-height: 1.25; }
+.lh-150 { line-height: 1.5; }
+
+a {
+    text-decoration: underline !important;
+}
