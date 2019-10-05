@@ -28,3 +28,7 @@ a {
 .symbolrow {
     display: none;
 }
+
+.pcvalue {
+    color: grey;
+}

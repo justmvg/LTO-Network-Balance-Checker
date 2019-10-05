@@ -44,6 +44,10 @@ var usdValue = (amount) => {
         eurval = response.LTO.EUR * formatBalance(amount)
         btcval = response.LTO.BTC * formatBalance(amount)
         ethval = response.LTO.ETH * formatBalance(amount)
+        document.getElementById('eurpc').textContent = response.LTO.EUR.toFixed(4).replace('.', ',');
+        document.getElementById('usdpc').textContent = response.LTO.USD.toFixed(4);
+        document.getElementById('btcpc').textContent = response.LTO.BTC.toFixed(8);
+        document.getElementById('ethpc').textContent = response.LTO.ETH.toFixed(8);
         document.getElementById('eur').textContent = eurval.toFixed(2).replace('.', ',');
         document.getElementById('usd').textContent = usdval.toFixed(2);
         document.getElementById('btc').textContent = btcval.toFixed(8);
@@ -71,3 +75,10 @@ chrome.storage.local.get(['balance', 'address'], (res) => {
   }
 
 })
+
+if (navigator.onLine) {
+  document.getElementById('networkState').style.display = 'none';
+} else {
+  document.getElementById('networkState').classList.add('alert-danger');
+  document.getElementById('networkState').textContent = 'No network connection.';
+}
