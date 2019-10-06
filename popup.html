@@ -15,9 +15,11 @@
     </div>
     <div class="blocks align-items-center">
             <h1 class="border-gray text-center" id="balance"></h1>
+            <div class="alert" role="alert" id="networkState"></div>
             <table width="100%" class="text-center">
                 <tr class="symbolrow"><td width="25%"><h4>&#8364;</h4></td><td width="25%"><h4>&#36;</h4></td><td width="25%"><h4>&#926;</h4></td><td width="25%"><h4>&#8383;</h4></td></tr>
                 <tr><td id="eur"></td><td id="usd"></td><td id="eth"></td><td id="btc"></td></tr>
+                <tr class="pcvalue"><td id="eurpc"></td><td id="usdpc"></td><td id="ethpc"></td><td id="btcpc"></td></tr>
             </table>
             <input class="form-control mr-sm-2" type="text" placeholder="Address" aria-label="Address" id="walletAddress">
             <button class="btn btn-success doSubmit float-right" type="submit" id="doSubmit">Save</button>
